@@ -6,9 +6,8 @@ export class HappyDaysElement extends LitElement {
     :host {
       display: block;
       border: 2px dashed gray;
-      margin: 4px;
-      padding: 4px;
-      width: 20vw;
+      padding: 20px;
+      max-width: 300px;
     }
   `
 
