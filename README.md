@@ -1,8 +1,8 @@
-# Bridgetown Website README
+# Bridgetown Lit Renderer Example
 
-Welcome to your new Bridgetown website! You can update this README file to provide additional context and setup information for yourself or other contributors.
+This [demo site](https://bridgetown-lit-renderer.onrender.com) shows the capability of the [Bridgetown Lit Renderer](https://github.com/bridgetownrb/bridgetown-lit-renderer) plugin. It allows you to create "islands" of Lit web component-based interactivity, complete with SSR + Hydration support.
 
-## Table of Contents
+## To Run This Example Locally…
 
 - [Prerequisites](#prerequisites)
 - [Install](#install)
@@ -16,11 +16,11 @@ Welcome to your new Bridgetown website! You can update this README file to provi
 - [GCC](https://gcc.gnu.org/install/)
 - [Make](https://www.gnu.org/software/make/)
 - [Ruby](https://www.ruby-lang.org/en/downloads/)
-  - `>= 2.5`
+  - `>= 2.7`
 - [Bridgetown Gem](https://rubygems.org/gems/bridgetown)
-  - `gem install bundler bridgetown -N`
+  - `gem install bridgetown -N`
 - [Node](https://nodejs.org)
-  - `>= 10.13`
+  - `>= 12`
 - [Yarn](https://yarnpkg.com)
 
 ## Install
@@ -33,21 +33,19 @@ bundle install && yarn install
 
 ## Development
 
-To start your site in development mode, run `yarn start` and navigate to [localhost:4000](https://localhost:4000/)!
-
-Use a [theme](https://github.com/topics/bridgetown-theme), add some [plugins](https://www.bridgetownrb.com/plugins/), and/or run some [automations](https://github.com/topics/bridgetown-automation) to get started quickly.
+To start your site in development mode, run `bin/bridgetown start` and navigate to [localhost:4000](https://localhost:4000/)!
 
 ### Commands
 
 ```sh
 # running locally
-yarn start
+bin/bridgetown start
 
 # build & deploy to production
-yarn deploy
+bin/bridgetown deploy
 
 # load the site up within a Ruby console (IRB)
-bundle exec bridgetown console
+bin/bridgetown console
 ```
 
 > Learn more: [Bridgetown CLI Documentation](https://www.bridgetownrb.com/docs/command-line-usage)
