@@ -18,7 +18,14 @@ export class HappyDaysElement extends LitElement {
   render() {
     return html`
       <p>Hello ${this.hello}! ${Date.now()}</p>
+      <p>Light DOM slot: <slot style="font-weight: bold"></slot></p>
     `;
+  }
+
+  firstUpdated() {
+    setInterval(() => {
+      this.requestUpdate()
+    }, 2000)
   }
 }
 
