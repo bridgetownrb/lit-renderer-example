@@ -5,9 +5,10 @@ export class HappyDaysElement extends LitElement {
   static styles = css`
     :host {
       display: block;
+      background-color: lightyellow;
       border: 2px dashed gray;
       padding: 20px;
-      max-width: 300px;
+      max-width: 350px;
     }
   `
 
@@ -17,7 +18,7 @@ export class HappyDaysElement extends LitElement {
 
   render() {
     return html`
-      <p>Hello ${this.hello}! ${Date.now()}</p>
+      <p>Hello ${this.hello}! <strong style="letter-spacing:0.15em">${Date.now()}</strong></p>
       <p>Light DOM slot: <slot style="font-weight: bold"></slot></p>
     `;
   }
